@@ -1,0 +1,113 @@
+#home-articles .articles-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#home-articles .articles-container article:first-child {
+    grid-template-columns: 1fr;
+    grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container article:last-child {
+    grid-template-columns: 1fr;
+    grid-column: 2 / span 1;
+}
+
+
+#showcase .showcase-container {
+    grid-template-columns: 1fr;
+}
+
+#about .page-container {
+    grid-template-columns: 1fr;
+}
+
+#about article {
+    grid-row: 1;
+}
+
+#about .container {
+    padding: 0;
+}
+
+#article .page-container {
+    grid-template-columns: 1fr;
+}
+
+#article article {
+    grid-row: 1;
+}
+
+#article .container {
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+    #showcase .showcase-content p, #showcase .showcase-content a {
+        display: none;
+    }
+
+    #showcase .showcase-content h1 {
+        margin-bottom: 0;
+        font-size: 1.75rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #main-nav .container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #main-nav .container ul, #main-nav .brandName {
+        justify-self: center;
+    }
+
+    #main-nav .brandName {
+        margin-bottom: 1.5rem;
+    }
+
+    #home-articles .articles-container {
+        grid-template-columns: 1fr;
+    }
+
+    #home-articles .articles-container article:first-child {
+        grid-template-columns: 1fr;
+        grid-column: 1;
+    }
+
+    #home-articles .articles-container article:last-child {
+        grid-template-columns: 1fr;
+        grid-column: 1;
+    }
+
+    #footer .container {
+        grid-template-columns: 1fr;
+    }
+
+    #footer .container div:last-child {
+        grid-column: 1;
+    }
+
+    #footer .container input[type='email'] {
+        width: 100%;
+    }
+
+    #footer .container input[type='submit'] {
+        width: 100%;
+    }
+
+    #footer .list li {
+        width: 100%;
+    }
+
+    #footer .container div {
+        margin-bottom: 1rem;
+    }
+
+    #footer .container div:last-child {
+        margin-bottom: 0;
+    }
+
+}
